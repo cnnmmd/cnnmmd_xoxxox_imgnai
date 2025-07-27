@@ -1,0 +1,16 @@
+networks:
+  default:
+    name: xoxxox_netmid
+    external: true
+services:
+  xoxxox_imgnai:
+    image: xoxxox_envnai:001
+    container_name: xoxxox_imgnai
+    volumes:
+    - ../../../export:/opt/common
+    env_file:
+    - ./envdir.txt
+    - ${HOME}/sec/key/.envath_nai.sh
+    ports:
+    - 13502:80
+    command: "/opt/python/bin/python /opt/common/bin/xoxxox/srvimg.py --engine xoxxox/engine_imgnai --gensyn 0"

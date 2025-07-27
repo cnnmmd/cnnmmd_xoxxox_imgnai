@@ -1,0 +1,8 @@
+{
+  "nmodel": "ImageModel.Anime_v3",
+  "samplr": "ImageSampler.k_euler",
+  "resimg": "ImageResolution.Small_Square",  
+  "presng": "UCPreset.Preset_Light",
+  "flgsme": "True",
+  "numsmp": 1
+}
