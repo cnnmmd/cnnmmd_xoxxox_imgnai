@@ -10,7 +10,7 @@ services:
     - ../../../export:/opt/common
     env_file:
     - ./envdir.txt
-    - ${HOME}/sec/key/.envath_nai.sh
+    - ${HOME}/sec/key/.envath_nai.txt
     ports:
     - 13502:80
     command: "/opt/python/bin/python /opt/common/bin/xoxxox/srvimg.py --engine xoxxox/engine_imgnai --gensyn 0"
